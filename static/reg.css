@@ -1,0 +1,139 @@
+/*** Google font - Poppins ***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --background-gradient:linear-gradient(270deg,#40C9FF,#E81CFF);
+    --primary-color:#5160e0;
+    --white-color:#FFF;
+    --text-color:#111;
+    --border-color:#C7BEBE;
+    --box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-gradient);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 430px;
+    background: var(--white-color);
+    padding: 30px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+}
+
+.container h1{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    align-self: flex-start;
+}
+
+.container h1::before{
+    content: '';
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+}
+
+.container form{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.container form .form-group{
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .form-group input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus{
+    border-color: var(--primary-color);
+}
+
+form .policy{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+form .policy input{
+    margin-right: 10px;
+}
+
+form span{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.button button{
+    color: var(--white-color);
+    letter-spacing: 1px;
+    border: none;
+    background: var(--primary-color);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.button button:active{
+    transform: scale(0.97);
+}
+
+form .link-to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .link-to a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+form .link-to a:hover{
+    text-decoration: underline;
+}
+
+
+
+
